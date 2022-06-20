@@ -1,0 +1,97 @@
+{% load static %}
+<style>
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-Regular.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-Italic.otf') format('opentype');
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-Black.otf') format('opentype');
+        font-weight: 900;
+    }
+
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-Light.otf') format('opentype');
+        font-weight: 300;
+    }
+
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-Medium.otf') format('opentype');
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-Bold.otf') format('opentype');
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: 'Satoshi';
+        src: url('./font/Satoshi-BoldItalic.otf') format('opentype');
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-body {
+        padding-left: 40px;
+        font-family: Satoshi, serif;
+        display: grid;
+        align-content: center;
+        justify-content: left;
+        font-size: 26px;
+        font-weight: 500;
+        background: white;
+        width: 600px;
+        height: 200px;
+        color: black;
+    }
+
+    .image-wrapper {
+        background: white;
+        max-width: 400px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-rows: 38px auto;
+    }
+
+    .image-container__fixed-text {
+        padding-bottom: 1vw;
+        width: 222px;
+        text-align: center;
+        border: 2px black solid;
+    }
+
+    .image-container__dynamic-text {
+        background: #dd4d0f;
+        display: flex;
+        color: white;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+</style>
+<div class="image-body">
+    <div class="image-wrapper">
+        <div class="image-container__fixed-text">
+            Mam taki pomysł,
+        </div>
+        <div class="image-container__dynamic-text">
+            {{ phrase }}
+        </div>
+    </div>
+</div>
