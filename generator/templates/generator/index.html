@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generator</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'generator/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'generator/style.css' %}">
+</head>
+<body>
+<div class="generator-container">
+    {#        <h1>Mamy taki pomysł, żeby...</h1>#}
+    <form action="/" method="post" class="generator-form">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Generuj stopkę">
+    </form>
+</div>
+<footer>
+    <span>TRAVELIST.PL</span>
+    <span>Mamy Twój pomysł na wakacje</span>
+</footer>
+</body>
+</html>

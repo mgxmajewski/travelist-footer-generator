@@ -1,8 +1,128 @@
-body{
+/*html {*/
+/*    height: 100vh;*/
+/*}*/
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-Italic.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-Black.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./font/Satoshi-BoldItalic.otf') format('opentype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    font-family: Satoshi, serif;
+    margin: 0;
     background: #dd4d0f;
     color: white;
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+    height: 90vh;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+input[type=text] {
+    border: 2px solid white;
+    background: #dd4d0f;
+    width: 577px;
+    height: 150px;
+}
+
+input[type=submit] {
+    border: none;
+    color: black;
+    background: white;
+    font-size: 1.5rem;
+    width: 267px;
+    height: 67px;
+    text-align: start;
+    padding-left: 20px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    position: relative;
+    padding-left: 15px;
+    font-size: 1.86rem;
+    top: -40px;
+    white-space: pre-line;
+    color: #ff8855;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ff8855;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ff8855;
+}
+
+.generator-form {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 10px;
+}
+
+.generator-container {
+    align-self: center;
+    padding-left: 30vw;
 }
 
 p {
+
     color: green;
+}
+
+footer {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    width: 100vw;
+    background: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > span {
+    padding-left: 2em;
+    padding-right: 2em;
 }
