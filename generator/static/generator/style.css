@@ -59,11 +59,20 @@ label {
     font-weight: 500;
 }
 
-input[type=text] {
+textarea {
+    font-size: 1.86rem;
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align: left;
+    color: white;
     border: 2px solid white;
     background: #dd4d0f;
     width: 577px;
     height: 150px;
+}
+
+textarea:focus {
+    outline: none;
 }
 
 input[type=submit] {
@@ -78,10 +87,7 @@ input[type=submit] {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    position: relative;
-    padding-left: 15px;
     font-size: 1.86rem;
-    top: -40px;
     white-space: pre-line;
     color: #ff8855;
     opacity: 1; /* Firefox */
@@ -104,11 +110,6 @@ input[type=submit] {
 .generator-container {
     align-self: center;
     padding-left: 30vw;
-}
-
-p {
-
-    color: green;
 }
 
 footer {
