@@ -17,7 +17,7 @@ def download(request):
     print(user_idea)
     phrase = {'phrase': user_idea}
     content = render_to_string('generator/image.html', phrase)
-    hti = Html2Image(custom_flags=['--no-sandbox'])
+    hti = Html2Image(custom_flags=['--disable-gpu'])
     hti.screenshot(html_str=content, size=(600, 200), save_as='generated-footer.png')
     img = open('./generated-footer.png', 'rb')
     response = FileResponse(img)
