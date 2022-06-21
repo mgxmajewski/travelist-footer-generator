@@ -60,7 +60,7 @@ label {
 }
 
 textarea {
-    font-size: 1.86rem;
+    font-size: 2rem;
     padding-left: 15px;
     padding-top: 15px;
     text-align: left;
@@ -78,16 +78,16 @@ textarea:focus {
 input[type=submit] {
     border: none;
     color: black;
-    background: white;
-    font-size: 1.5rem;
-    width: 267px;
-    height: 67px;
+    font-size: 2rem;
+    width: 264px;
+    height: 64px;
     text-align: start;
     padding-left: 20px;
+    background-image:url('button.png');
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-size: 1.86rem;
+    font-size: 2rem;
     white-space: pre-line;
     color: #ff8855;
     opacity: 1; /* Firefox */
