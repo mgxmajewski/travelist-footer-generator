@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.template.loader import render_to_string
 from django.http import FileResponse
+from django.views.decorators.csrf import csrf_exempt
 from html2image import Html2Image
 
 from .forms import IdeaForm
@@ -12,6 +13,7 @@ def index(request):
     return render(request, "generator/index.html", context)
 
 
+@csrf_exempt
 def download(request):
     user_idea = request.POST.get('user_idea')
     print(user_idea)
