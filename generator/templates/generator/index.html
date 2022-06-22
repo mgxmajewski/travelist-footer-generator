@@ -26,11 +26,15 @@
     <form action="/download" method="post" class="generator-form">
         {% csrf_token %}
         {{ form }}
-        <input type="submit" value="Generuj stopkę">
+        <button type="submit" class="form-button">
+            Generuj stopkę
+            <img class="arrow-image" alt="arrow image" src={% static 'generator/arrow.png' %}>
+        </button>
+{#        <input type="submit" value="Generuj stopkę">#}
     </form>
 </div>
 <footer>
-    <span>TRAVELIST.PL</span>
+    <span><img class="travelist-logo" alt="travelist.pl" src={% static 'generator/travelist_logo.png' %}></span>
     <span>Mamy Twój pomysł na wakacje</span>
 </footer>
 </body>
