@@ -2,9 +2,7 @@ from django import forms
 
 
 class IdeaForm(forms.Form):
-    user_idea = forms.CharField(label='Mamy taki pomysł, żeby...',
+    user_idea = forms.CharField(label='Mamy taki pomysł, żeby w wakacje',
                                 max_length=100,
                                 widget=forms.Textarea(
-                                    attrs={'placeholder': 'Poinformuj swoich partnerów o wymarzonym pomyśle wakacyjnym. '
-                                                          'Dokończ powyższe zdanie i wygenerwuj plik do wstawienia '
-                                                          'w stopkę maila.'}))
+                                    attrs={'placeholder': 'nie wstawać z leżaka i liczyć gwiazdki hoteli.'}))

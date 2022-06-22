@@ -10,6 +10,19 @@
 </head>
 <body>
 <div class="generator-container">
+    <section class="introduction">
+        <h1>Teraz Ty też możesz zostać ambasadorem </br>naszej nowej kampanii!</h1>
+        <p>Dokończ zdanie, wygeneruj plik JPG i wstaw go jako część swojej </br>stopki e-mail zgodnie ze
+            <a href="http://travelist.fmcgo.pl/static/generator/wzor.png"
+               target="_blank"
+               rel="noopener noreferrer"
+            >
+                wzorem.
+            </a>
+        </p>
+        <p>Niech każdy Twój mail będzie inspiracją dla adresatów, </br>żeby sami też znaleźli swój pomysł na
+            wakacje.</p>
+    </section>
     <form action="/download" method="post" class="generator-form">
         {% csrf_token %}
         {{ form }}
