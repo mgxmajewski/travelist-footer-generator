@@ -20,7 +20,7 @@ def download(request):
     user_idea = request.POST.get('user_idea')
     print(user_idea)
     print(f'session {request.session.session_key}')
-    phrase = {'phrase': user_idea}
+    phrase = {'phrase': user_idea.lower()}
     content = render_to_string('generator/image.html', phrase)
     hti = Html2Image()
     hti.browser.flags = ['--force-color-profile=SRGB', '--disable-gpu', '--no-sandbox', '--default-background-color=0']
